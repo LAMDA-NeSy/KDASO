@@ -1,0 +1,74 @@
+[
+    {
+        "context": "In rheumatoid arthritis, the body' s immune system misfunctions by attacking healthy cells in the joints causing the release of a hormone that in turn causes pain and swelling. This hormone is normally activated only in reaction to injury or infection. A new arthritis medication will contain a protein that inhibits the functioning of the hormone that causes pain and swelling in the joints.", 
+        "question": "The statements above, if true, most strongly support which one of the following conclusions?", 
+        "answers": ["Unlike aspirin and other medications that reduce pain and swelling and that are currently available, the new medication would repair existing cell damage that had been caused by rheumatoid arthritis.", "A patient treated with the new medication for rheumatoid arthritis could sustain a joint injury without becoming aware of it.", "Joint diseases other than rheumatoid arthritis would not be affected by the new medication.", "The benefits to rheumatoid arthritis sufferers of the new medication would outweigh the medication's possible harmful side effects."], 
+        "label": 1, 
+        "id_string": "train_0",
+        "rule": "R0"
+    }, 
+    {
+        "context": "Patient: Pharmacists maintain that doctors should not be permitted to sell the medicine that they prescribe because doctors would then be tempted to prescribe unnecessary medicines in order to earn extra income. But pharmacists have a financial interest in having a monopoly on the sale of prescription medicines, so their objection to the sale of medicines by doctors cannot be taken seriously.", 
+        "question": "The patient's argument proceeds by", 
+        "answers": ["attempting to discredit a position by questioning the motives of the proponents of that position", "rejecting a questionable position on the grounds that the general public does not support that position", "pointing out an unstated assumption on which the pharmacists' argument relies and then refuting it", "asserting that pharmacists lack the appropriate knowledge to have informed opinions on the subject under discussion"], 
+        "label": 0, 
+        "id_string": "train_1",
+        "rule": "R1"
+    }, 
+    {
+        "context": "Paula will visit the dentist tomorrow morning only if Bill goes golfing in the morning. Bill will not go golfing unless Damien agrees to go golfing too. However, Damien has decided not to go golfing. Ttherefore, Paula will not be visiting the dentist tomorrow morning.", 
+        "question": "The pattern of reasoning displayed above most closely parallels which of the following?", 
+        "answers": ["If Marge goes to the bank today, Lauren will not cash her check tomorrow. Marge will not wash her car unless it is sunny. However, it is sunny, so Marge will wash her car and go shopping with Lauren.", "Kevin will wash his car tomorrow only if Brittany has to go visit her grandmother. Unless Aunt Susan has to run errands, Brittany will not have to go visit her grandmother. Since Aunt Susan does not have to run errands, Kevin will not wash his car tomorrow.", "Renee will do her homework tonight if there is nothing good on television and if her neighbors do not have a party. Although, there is something good on television; her neighbors are also having a party. Ttherefore, Renee will attend the party.", "Maddie will plan a picnic only if one of her friends, Lisa or Kenny, will come. Kenny will not come to the picnic, but Lisa will. Ttherefore, Maddie will plan a picnic."], 
+        "label": 1, 
+        "id_string": "train_2",
+        "rule": "R0"
+    }, 
+    {
+        "context": "Some theorists argue that literary critics should strive to be value-neutral in their literary criticism. These theorists maintain that by exposing the meaning of literary works without evaluating them, critics will enable readers to make their own judgments about the works' merits. But literary criticism cannot be completely value-neutral. Thus, some theorists are mistaken about what is an appropriate goal for literary criticism.", 
+        "question": "The argument's conclusion follows logically if which one of the following is assumed?", 
+        "answers": ["Any critic who is able to help readers make their own judgments about literary works' merits should strive to produce value-neutral criticism.", "If it is impossible to produce completely value- neutral literary criticism, then critics should not even try to be value-neutral.", "The less readers understand the meaning of a literary work, the less capable they will be of evaluating that work's merits.", "Critics are more likely to provide criticisms of the works they like than to provide criticisms of the works they dislike."], 
+        "label": 1, 
+        "id_string": "train_3",
+        "rule": "R0"
+    }, 
+    {
+        "context": "Shipping Clerk: The five specially ordered shipments sent out last week were sent out on Thursday. Last week, all of the shipments that were sent out on Friday consisted entirely of building supplies, and the shipping department then closed for the weekend. Four shipments were sent to Truax Construction last week, only three of which consisted of building supplies.", 
+        "question": "If the shipping clerk's statements are true, which of the following must also be true?", 
+        "answers": ["At least one of the shipments sent to Truax Construction last week was sent out before Friday.", "At least one of last week's specially ordered shipments did not consist of building supplies.", "At least one of the shipments sent to Truax Construction last week was specially ordered.", "At least one of the shipments sent to Truax Construction was not sent out on Thursday of last week."], 
+        "label": 0, 
+        "id_string": "train_4",
+        "rule": "R0"
+    }, 
+    {
+        "context": "Firms adopting \"profit-related-pay\" (PRP) contracts pay wages at levels that vary with the firm' s profits. In the metalworking industry last year, firms with PRP contracts in place showed productivity per worker on average 13 percent higher than that of their competitors who used more traditional contracts.", 
+        "question": "If, on the basis of the evidence above, it is argued that PRP contracts increase worker productivity, which of the following, if true, would most seriously weaken that argument?", 
+        "answers": ["Many firms in the metalworking industry have modernized production equipment in the last five years, and most of these introduced PRP contracts at the same time.", "Under PRP contracts costs other than labor costs, such as plant, machinery, and energy, make up an increased proportion of the total cost of each unit of output.", "Because introducing PRP contracts greatly changes individual workers' relationships to the firm, negotiating the introduction of PRP contracts in complex and time consuming.", "In firms in the metalworking industry where PRP contracts are in place, the average take-home pay is 15 percent higher than it is in those firms where workers have more traditional contracts."], 
+        "label": 0, 
+        "id_string": "train_5",
+        "rule": "R1"
+    }, 
+    {
+        "context": "Astronomer: Mount Shalko is the perfect site for the proposed astronomical observatory. The summit would accommodate the complex as currently designed, with some room left for expansion. There are no large cities near the mountain, so neither smog nor artificial light interferes with atmospheric transparency. Critics claim that Mount Shalko is a unique ecological site, but the observatory need not be a threat to endemic life-forms. In fact, since it would preclude recreational use of the mountain, it should be their salvation. It is estimated that 20, 000 recreational users visit the mountain every year, posing a threat to the wildlife.", 
+        "question": "Which one of the following, if true, most weakens the astronomer's argument?", 
+        "answers": ["More than a dozen insect and plant species endemic to Mount Shalko are found nowhere else on earth.", "The building of the observatory would not cause the small towns near Mount Shalko eventually to develop into a large city, complete with smog, bright lights, and an influx of recreation seekers.", "A survey conducted by a team of park rangers concluded that two other mountains in the same general area have more potential for recreational use than Mount Shalko.", "Having a complex that covers most of the summit, as well as having the necessary security fences and access road on the mountain, could involve just as much ecological disruption as does the current level of recreational use."], 
+        "label": 3, 
+        "id_string": "train_6",
+        "rule": "R1"
+    }, 
+    {
+        "context": "Opponents of peat harvesting in this country argue that it would alter the ecological balance of our peatrich wetlands and that, as a direct consequence of this, much of the country' s water supply would be threatened with contamination. But this cannot be true, for in Ireland, where peat has been harvested for centuries, the water supply is not contaminated. We can safely proceed with the harvesting of peat.", 
+        "question": "Which one of the following, if true, most strengthens the argument?", 
+        "answers": ["The peat-harvesting industry of Ireland has been able to supply most of that country's fuel for generations.", "The original ecology of the peat-harvesting areas of Ireland was virtually identical to that of the undisturbed wetlands of this country.", "Over hundreds of years, the ecological balance of all areas changes slowly but significantly, sometimes to the advantage of certain flora and fauna.", "The activities of other industries in coming years are likely to have adverse effects on the water supply of this country."], 
+        "label": 1, 
+        "id_string": "train_7",
+        "rule": "R0"
+    }, 
+    {
+        "context": "Shortly after the power plant opened and began discharging its wastewater into the river, there was a decrease in the overall number of bass caught by anglers downstream from the plant.", 
+        "question": "Each of the following, if true, could explain the decrease described above EXCEPT:", 
+        "answers": ["The discharged water was warmer than the normal river temperature, leading the bass to seek cooler water elsewhere.", "Because of the new plant, access to the part of the river downstream from the plant was improved, leading to an increase in the number of anglers fishing for bass.", "Because of the new plant, the level of noise downstream increased, making that section of the river a less popular place for anglers to fish.", "The discharged wastewater made the river more attractive to fish that are the natural predators of bass."], 
+        "label": 1, 
+        "id_string": "train_8",
+        "rule": "R1"
+    }
+]

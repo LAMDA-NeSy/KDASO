@@ -1,0 +1,15 @@
+[
+    {
+        "context": "Negotiations between the union and the trucking industry will not resume unless one or the other of these parties agrees to make concessions. The trucking industry will not make any concessions without certain prior concessions being made by the union, and the union will make concessions only if the government agrees to act as mediator.", 
+        "question": "If the statements above are true, which one of the following must also be true on the basis of them?", 
+        "answers": ["If the union makes concessions, then the trucking industry will also make concessions.", "Differences between the union and the trucking industry will be successfully negotiated if the government agrees to act as mediator.", "Negotiations between the union and the trucking industry will not resume.", "Negotiations between the union and the trucking industry will not resume unless the government agrees to act as mediator."], 
+        "question_type": 5, 
+        "id_string": "test_0"
+    }, 
+    {
+        "context": "Scientists analyzing air bubbles that had been trapped in Antarctic ice during the Earth' s last ice age found that the ice-age atmosphere had contained unusually large amounts of ferrous material and surprisingly small amounts of carbon dioxide. One scientist noted that algae absorb carbon dioxide from the atmosphere. The scientist hypothesized that the ferrous material, which was contained in atmospheric dust, had promoted a great increase in the population of Antarctic algae such as diatoms.", 
+        "question": "Which one of the following, if true, would most seriously undermine the scientist's hypothesis?", 
+        "answers": ["Diatoms are a microscopic form of algae that has remained largely unchanged since the last ice age.", "Sediment from the ocean floor near Antarctica reflects no increase, during the last ice age, in the rate at which the shells that diatoms leave when they die accumulated.", "The dust found in the air bubbles trapped in Antarctic ice contained other minerals in addition to the ferrous material.", "Algae that currently grow in the oceans near Antarctica do not appear to be harmed by even a large increase in exposure to ferrous material."], 
+        "question_type": 3, 
+        "id_string": "test_1"}
+]

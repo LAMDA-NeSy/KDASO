@@ -1,0 +1,7 @@
+{
+    "SEARCH_LIST": ["context", "question"],
+    "INFO_COLUMN": "context",
+    "QUESTION_COLUMN": "question",
+    "RULE_COLUMN": "rule",
+    "ANSWER_COLUMN": "answers"
+}
