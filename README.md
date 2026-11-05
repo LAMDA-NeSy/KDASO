@@ -2,7 +2,7 @@
 
 Liability adjudication asks whether a party should bear liability for an event — a ride-hailing cancellation, a property-fee dispute, a legal charge, a logical entailment. Modern LLM adjudicators reason under a library of **domain skills**: executable descriptions of preconditions, adjudication logic and execution templates. KDASO is a framework that **optimizes the skills instead of retraining the model**. It continuously induces new skills from recently adjudicated data, refines their formulation until the LLM's execution trajectory matches the expert's reasoning path, and routes only the applicable skills into the context budget. The result is an adjudicator that keeps pace with a shifting distribution, follows expert logic faithfully, and degrades gracefully as the skill library grows — without a single gradient step.
 
-| [📄 Paper](NeurIPS-KDASO.pdf) | [🌐 Project Page](index.html) | [🧪 Demo Dataset](data/test_data) |
+| [📄 Paper](NeurIPS-KDASO.pdf) | [🌐 Project Page](https://lamda-nesy.github.io/KDASO/) | [🧪 Demo Dataset](data/test_data) |
 |---|---|---|
 | NeurIPS 2026 | Nanjing University · DiDi Chuxing | Ready to run |
 
@@ -211,17 +211,9 @@ The scripts expect the `final_output.json` produced by Stage 4, flattened into a
 
 ```bibtex
 @inproceedings{cheng2026kdaso,
-  title     = {KDASO: Knowledge-Data Dual-Driven Automated Skill Optimization
-               for Liability Adjudication Tasks},
-  author    = {Cheng, Zi-Jian and Wu, Weiming and Meng, Jie and Peng, Zhen
-               and Huang, Shan and Li, Qun and Wu, Guobing and Guo, Lan-Zhe},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  title     = {KDASO: Knowledge-Data Dual-Driven Automated Skill Optimization for Liability Adjudication Tasks},
+  author    = {Cheng, Zi-Jian and Wu, Weiming and Meng, Jie and Peng, Zhen and Huang, Shan and Li, Qun and Wu, Guobing and Guo, Lan-Zhe},
+  booktitle = {Advances in Neural Information Processing Systems},
   year      = {2026}
 }
 ```
-
----
-
-## Acknowledgements
-
-This work is supported by the NSFC (Grant No. 62306133), the Key Program of the Science Foundation (Grant No. BK20243012) and the CCF-DiDi GAIA Collaborative Research Funds for Young Scholars. We also appreciate the guidance provided by the engineers at DiDi Chuxing Co. Ltd.
