@@ -80,7 +80,7 @@
         <h2 class="section-title">1. Three Failures of Skill-Based Adjudication</h2>
         <div class="content">
           <p>
-            Giving an LLM a library of domain skills is attractive because the reasoning stays explicit and auditable. Yet the paradigm fails in three systematic ways: skills cannot be acquired at the speed of the data, cannot be executed as the expert intended, and cannot be deployed at scale inside a finite context window. These are not engineering defects — they are tensions intrinsic to skill-based adjudication.
+            Giving an LLM a library of domain skills is attractive because the reasoning stays explicit and auditable. Yet the paradigm fails in three systematic ways: skills cannot be acquired at the speed of the data, cannot be executed as the expert intended, and cannot be deployed at scale inside a finite context window. These are not engineering defects. They are tensions intrinsic to skill-based adjudication.
           </p>
         </div>
         <div class="key-points three">
@@ -118,7 +118,7 @@
           <div class="point">
             <h3>Neighborhood-Conditioned Skill Induction</h3>
             <p>
-              Cases are embedded with BGE and scored by cosine similarity. The top-k (k = 4) neighbours of a case form a local chart on the data manifold that supplies sufficient yet non-redundant evidence. The LLM induces a skill from that neighbourhood, which is then validated on real data — an empty support set means a hallucination and the skill is dropped. Conflicting skills are resolved by empirical accuracy or merged by the LLM.
+              Cases are embedded with BGE and scored by cosine similarity. The top-k (k = 4) neighbours of a case form a local chart on the data manifold that supplies sufficient yet non-redundant evidence. The LLM induces a skill from that neighbourhood, which is then validated on real data, an empty support set means a hallucination and the skill is dropped. Conflicting skills are resolved by empirical accuracy or merged by the LLM.
             </p>
           </div>
           <div class="point">
@@ -130,7 +130,7 @@
           <div class="point">
             <h3>Context-Budgeted Skill Routing</h3>
             <p>
-              One lightweight XGBoost classifier per skill predicts whether that skill's preconditions hold for a test case. Classifier hits are unioned with direct structural matches, then truncated to the largest subset that fits the context budget, ordered by classifier confidence and match strength — a minimal yet sufficient skill set for every case.
+              One lightweight XGBoost classifier per skill predicts whether that skill's preconditions hold for a test case. Classifier hits are unioned with direct structural matches, then truncated to the largest subset that fits the context budget, ordered by classifier confidence and match strength, a minimal yet sufficient skill set for every case.
             </p>
           </div>
         </div>
@@ -147,7 +147,7 @@
         <h2 class="section-title">3. Experimental Results</h2>
         <div class="content">
           <p>
-            KDASO is evaluated on three real-world domains — five ride-hailing tasks from DiDi, five legal liability tasks from LawBench and LegalBench, and two logical reasoning benchmarks (ReClor, AR-LSAT) — against proprietary LLMs, liable-adjudicated general-purpose algorithms, domain-specific models and open-source general LLMs. All numbers are averaged over three seeds.
+            KDASO is evaluated on three real-world domains — five ride-hailing tasks from DiDi, five legal liability tasks from LawBench and LegalBench, and two logical reasoning benchmarks (ReClor, AR-LSAT) against proprietary LLMs, liable-adjudicated general-purpose algorithms, domain-specific models and open-source general LLMs. All numbers are averaged over three seeds.
           </p>
         </div>
 
@@ -270,7 +270,7 @@
           <div class="point">
             <h3>Skills travel to concept-similar tasks</h3>
             <p>
-              Skills induced on Cancel&ndash;Appeal are dropped into Cancel&ndash;Passenger-cancel and Cancel&ndash;Driver-cancel with no adaptation, and improve all metrics except a comparable O-Precision — a <strong>+8.96%</strong> average gain, concentrated in bad-faith precision and recall.
+              Skills induced on Cancel&ndash;Appeal are dropped into Cancel&ndash;Passenger-cancel and Cancel&ndash;Driver-cancel with no adaptation, and improve all metrics except a comparable O-Precision, a <strong>+8.96%</strong> average gain, concentrated in bad-faith precision and recall.
             </p>
           </div>
           <div class="point">
@@ -282,7 +282,7 @@
           <div class="point">
             <h3>From research loop to production review</h3>
             <p>
-              One hour of expert work yields roughly 100 reviewed cases and 5 valid skills. KDASO processes 3,000 cases and proposes 30 candidate skills in the same hour. No skill is deployed autonomously — every candidate passes mandatory manual review before entering the base.
+              One hour of expert work yields roughly 100 reviewed cases and 5 valid skills. KDASO processes 3,000 cases and proposes 30 candidate skills in the same hour. No skill is deployed autonomously, every candidate passes mandatory manual review before entering the base.
             </p>
           </div>
           <div class="point">
