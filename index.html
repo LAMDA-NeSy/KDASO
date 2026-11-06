@@ -118,13 +118,13 @@
           <div class="point">
             <h3>Neighborhood-Conditioned Skill Induction</h3>
             <p>
-              Cases are embedded with BGE and scored by cosine similarity; the top-k (k = 4) neighbours of a case form a local chart on the data manifold that supplies sufficient yet non-redundant evidence. The LLM induces a skill from that neighbourhood, which is then validated on real data — an empty support set means a hallucination and the skill is dropped; conflicting skills are resolved by empirical accuracy or merged by the LLM.
+              Cases are embedded with BGE and scored by cosine similarity. The top-k (k = 4) neighbours of a case form a local chart on the data manifold that supplies sufficient yet non-redundant evidence. The LLM induces a skill from that neighbourhood, which is then validated on real data — an empty support set means a hallucination and the skill is dropped. Conflicting skills are resolved by empirical accuracy or merged by the LLM.
             </p>
           </div>
           <div class="point">
             <h3>Execution-Aligned Skill Refinement</h3>
             <p>
-              For each skill, G stochastic trajectories are sampled and compared with the human reference; the misalignment set collects trajectories below threshold &tau;, and the instability rate &rho;(s) flags the skill for rewriting. The LLM diagnoses the lowest-scoring trajectories and rebuilds the skill as an explicit, step-wise execution scaffold, iterating until all trajectories align or the budget is exhausted.
+              For each skill, G stochastic trajectories are sampled and compared with the human reference. The misalignment set collects trajectories below threshold &tau;, and the instability rate &rho;(s) flags the skill for rewriting. The LLM diagnoses the lowest-scoring trajectories and rebuilds the skill as an explicit, step-wise execution scaffold, iterating until all trajectories align or the budget is exhausted.
             </p>
           </div>
           <div class="point">
@@ -153,7 +153,7 @@
 
         <div class="table-wrap">
           <table class="results-table">
-            <caption>Table 1: Ride-hailing adjudication (%). Ordinary liability (O) is the metric DiDi treats as decisive for platform fairness; bad-faith (B) metrics are in the paper.</caption>
+            <caption>Table 1: Ride-hailing adjudication (%). Ordinary liability (O) is the metric DiDi treats as decisive for platform fairness. Bad-faith (B) metrics are in the paper.</caption>
             <thead>
               <tr>
                 <th>Model</th>
@@ -196,7 +196,7 @@
 
         <div class="table-wrap">
           <table class="results-table">
-            <caption>Table 2: Legal liability determination. LA-ITI and LA-CP come from LawBench; LE-OPP, LE-UN and LE-LH are built on LegalBench.</caption>
+            <caption>Table 2: Legal liability determination. LA-ITI and LA-CP come from LawBench. LE-OPP, LE-UN and LE-LH are built on LegalBench.</caption>
             <thead>
               <tr>
                 <th>Model</th>
@@ -260,65 +260,6 @@
             </tbody>
           </table>
         </div>
-
-        <div class="table-wrap">
-          <table class="results-table">
-            <caption>Table 4: Ablation on the Cancel&ndash;Appeal task (QwQ-32B). Each module is necessary; routing matters most, refinement drives recall.</caption>
-            <thead>
-              <tr>
-                <th>Variant</th>
-                <th>O-Precision</th>
-                <th>O-Recall</th>
-                <th>B-Precision</th>
-                <th>B-Recall</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>QwQ-32B (no skills)</td><td>72.49&plusmn;0.89</td><td>62.30&plusmn;0.97</td><td>57.78&plusmn;0.65</td><td>29.88&plusmn;0.41</td></tr>
-              <tr><td>w/o Neighborhood-Conditioned Skill Induction</td><td>72.54&plusmn;0.90</td><td>71.72&plusmn;0.86</td><td>54.00&plusmn;0.71</td><td>31.03&plusmn;0.43</td></tr>
-              <tr><td>w/o Execution-Aligned Skill Refinement</td><td>72.36&plusmn;0.89</td><td>71.09&plusmn;0.85</td><td>55.56&plusmn;0.62</td><td>28.73&plusmn;0.59</td></tr>
-              <tr><td>w/o Context-Budgeted Skill Routing</td><td>69.83&plusmn;0.91</td><td>88.02&plusmn;0.96</td><td>63.39&plusmn;0.77</td><td>40.80&plusmn;0.55</td></tr>
-              <tr class="ours-row"><td>KDASO (QwQ-32B)</td><td>73.42&plusmn;0.90</td><td>87.38&plusmn;0.97</td><td>69.17&plusmn;0.89</td><td>47.70&plusmn;0.60</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="table-wrap">
-          <table class="results-table">
-            <caption>Table 5: Cost per adjudication and, on the right, why routing uses classifiers instead of dense retrieval over 1,000 skills.</caption>
-            <thead>
-              <tr>
-                <th>Model</th>
-                <th>Input tokens</th>
-                <th>Output tokens</th>
-                <th>Time (s / inference)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>QwQ-32B</td><td>27,156</td><td>1,540</td><td>14.79</td></tr>
-              <tr class="ours-row"><td>KDASO (QwQ-32B)</td><td>7,241</td><td>1,769</td><td>12.13</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="table-wrap">
-          <table class="results-table">
-            <caption>Table 6: Skill routing methods. Semantic similarity is not logical applicability: embedding routers fetch skills that look alike but cannot fire.</caption>
-            <thead>
-              <tr>
-                <th>Router</th>
-                <th>Precision</th>
-                <th>Recall</th>
-                <th>Training time</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="ours-row"><td>XGBoost (per skill)</td><td>67.37%</td><td>89.46%</td><td>345.56 s</td></tr>
-              <tr><td>Dense retrieval (bi-encoder)</td><td>36.10%</td><td>92.53%</td><td>0.69 s</td></tr>
-              <tr><td>Cross-encoder</td><td>47.10%</td><td>94.72%</td><td>16.34 s</td></tr>
-            </tbody>
-          </table>
-        </div>
       </div>
     </section>
 
@@ -341,7 +282,7 @@
           <div class="point">
             <h3>From research loop to production review</h3>
             <p>
-              One hour of expert work yields roughly 100 reviewed cases and 5 valid skills; KDASO processes 3,000 cases and proposes 30 candidate skills in the same hour. No skill is deployed autonomously — every candidate passes mandatory manual review before entering the base, and <strong>40%</strong> of generated skills have been accepted by DiDi as novel yet policy-consistent.
+              One hour of expert work yields roughly 100 reviewed cases and 5 valid skills. KDASO processes 3,000 cases and proposes 30 candidate skills in the same hour. No skill is deployed autonomously — every candidate passes mandatory manual review before entering the base.
             </p>
           </div>
           <div class="point">
