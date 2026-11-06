@@ -24,7 +24,7 @@ KDASO answers each tension with one module, and the three modules form a closed 
 | Execution-Aligned Skill Refinement | Samples G stochastic execution trajectories per skill, scores each against the human reference trajectory, and rewrites the skill's execution scaffolding for the misaligned ones (iterative, capped at 20 rounds) | Closes the semantic execution gap; abstract instructions become step-wise, evidence-grounded checking procedures |
 | Context-Budgeted Skill Routing | Trains one lightweight XGBoost applicability classifier per skill on top of case embeddings, unions classifier hits with direct structural matches, then truncates to the largest set that fits the context budget | Removes skill omission and attentional interference; keeps a stable ~12 skills per case while cutting input tokens by ~73% |
 
-The skill library therefore behaves like a versioned artefact of the deployed system: skills induced in one scenario transfer directly to concept-similar scenarios (**+8.96%**), monthly rolling optimization keeps improving performance, and **40%** of the generated skills have been accepted by DiDi's adjudication team and merged into the production skill base.
+The skill library therefore behaves like a versioned artefact of the deployed system: skills induced in one scenario transfer directly to concept-similar scenarios (**+8.96%**), monthly rolling optimization keeps improving performance.
 
 ---
 
